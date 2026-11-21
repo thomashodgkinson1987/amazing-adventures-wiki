@@ -19,6 +19,7 @@ anything.
 .
 ├── AGENTS.md              # this file — the schema/rulebook
 ├── CLAUDE.md              # symlink -> AGENTS.md (harness discovery)
+├── CONTRIBUTING.md        # how to contribute (workflow + lint checklist)
 ├── README.md              # human-oriented orientation + how to prompt the agent
 ├── LICENSE                # MIT
 ├── .gitignore             # Obsidian UI state + non-bundled game files

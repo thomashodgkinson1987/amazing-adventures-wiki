@@ -290,3 +290,13 @@ Append-only. Format: `## [YYYY-MM-DD] <ingest|query|lint|init> | <Title>` (see
 - **Result:** 0 broken links (non-log), 0 frontmatter problems, 0 orphan pages, full
   `index.md` coverage. The only unresolved link targets are intentional history references in
   `log.md` to files deleted during the standalone-repo cleanup.
+
+## [2026-11-21] init | Add CONTRIBUTING.md
+
+- Added `CONTRIBUTING.md` (practical contributor guide): principles (evidence over
+  recollection, text-only, immutable `raw/`, append-only `log.md`), getting started,
+  making a change, ingest/query workflows, a pre-submit lint checklist mirroring
+  [AGENTS.md](../AGENTS.md) §4.3, and commit-message conventions (Conventional Commits).
+- Listed in the layout trees of both `README.md` and `AGENTS.md`; linked from
+  `README.md` (new **Contributing** section).
+- Link check: all 13 links resolve; no game files or `/workspace` paths added.

@@ -10,6 +10,7 @@ Proton. It follows Andrej Karpathy's "LLM Wiki" pattern: a small set of immutabl
 ```
 .
 ├── AGENTS.md   # the schema/rulebook every agent must read first (CLAUDE.md -> it)
+├── CONTRIBUTING.md   # how to contribute (workflow, lint checklist)
 ├── README.md   # this file
 ├── LICENSE     # MIT
 ├── .gitignore  # Obsidian UI state + editor / OS cruft
@@ -61,6 +62,12 @@ The agent reads `AGENTS.md` (auto-discovered via `CLAUDE.md`) for the rules, the
 > links, missing pages, and `index.md` drift."
 
 Every operation appends an entry to `wiki/log.md`.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or update knowledge, the ingest /
+query workflows, and the pre-submit lint checklist. Schema and rules live in
+[AGENTS.md](AGENTS.md).
 
 ## License
 
