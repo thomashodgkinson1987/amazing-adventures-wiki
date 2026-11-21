@@ -21,6 +21,7 @@ anything.
 ├── CLAUDE.md              # symlink -> AGENTS.md (harness discovery)
 ├── README.md              # human-oriented orientation + how to prompt the agent
 ├── LICENSE                # MIT
+├── .gitignore             # Obsidian UI state + non-bundled game files
 ├── raw/                   # IMMUTABLE source of truth (never edit in place)
 │   ├── FINDINGS.md             # prior session's performance-fix notes
 │   ├── SPLASHSCREEN-PATCHING.md# prior session's splash analysis/patch notes

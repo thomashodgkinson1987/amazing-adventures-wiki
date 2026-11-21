@@ -12,12 +12,12 @@ Proton. It follows Andrej Karpathy's "LLM Wiki" pattern: a small set of immutabl
 ├── AGENTS.md   # the schema/rulebook every agent must read first (CLAUDE.md -> it)
 ├── README.md   # this file
 ├── LICENSE     # MIT
-├── .gitignore  # Obsidian UI state + non-bundled game files
+├── .gitignore  # Obsidian UI state + editor / OS cruft
 ├── raw/        # immutable source of truth (notes + third-party config)
 │   ├── FINDINGS.md
 │   ├── SPLASHSCREEN-PATCHING.md
 │   ├── SPLASH-PATCH-RUNTIME-TEST.md
-│   └── snapshots/   ddraw.ini   (game-derived files are not bundled)
+│   └── snapshots/   ddraw.ini
 └── wiki/       # compiled, interlinked knowledge
     ├── index.md        # START HERE — catalog of every page
     ├── log.md          # append-only operation log

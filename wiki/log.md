@@ -271,3 +271,22 @@ Append-only. Format: `## [YYYY-MM-DD] <ingest|query|lint|init> | <Title>` (see
   `queries/steam-verify-integrity-and-reapply.md`, `tooling/amazing-adventures-toolkit.md`.
 - Added `LICENSE` (MIT) and `.gitignore` (Obsidian UI state + the non-bundled game files).
 - Re-ran the structural lint: 0 broken links, 0 orphans, full `index.md` coverage.
+
+## [2026-11-21] lint | Full post-cleanup lint pass (links, paths, tooling, layout)
+
+- **Links:** all relative Markdown links in `README.md`, `AGENTS.md`, and `wiki/**/*.md`
+  resolve to existing files. No references to `backups/` or the removed
+  `raw/snapshots/{config.txt,partner.xml,splashscreens.xui}` remain in any editable page.
+- **Paths:** no `/workspace` or `llm-wiki/` paths remain outside the append-only history in
+  `log.md` (and the immutable `raw/` notes); all game-folder references use `<GAME_DIR>`
+  (defined in `README.md`).
+- **tooling/:** `amazing-adventures-toolkit.md` has valid frontmatter (`type: tool`,
+  `status: confirmed-static`, ISO date, sources incl. the external repo URL + `raw/` notes),
+  is listed in `wiki/index.md` (§Tooling), and is cross-linked from `overview.md`,
+  `index.md`, `architecture/binaries-and-hashes.md`, `fixes/cnc-ddraw-performance-fix.md`,
+  `fixes/splash-patch-option-a.md`, and `queries/steam-verify-integrity-and-reapply.md`.
+- **Layout parity:** `AGENTS.md` §1 and `README.md` now both list `LICENSE` and `.gitignore`;
+  both trees match the actual repo contents. Added the missing `.gitignore` line to `AGENTS.md`.
+- **Result:** 0 broken links (non-log), 0 frontmatter problems, 0 orphan pages, full
+  `index.md` coverage. The only unresolved link targets are intentional history references in
+  `log.md` to files deleted during the standalone-repo cleanup.
