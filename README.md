@@ -8,9 +8,11 @@ Proton. It follows Andrej Karpathy's "LLM Wiki" pattern: a small set of immutabl
 ## Layout
 
 ```
-llm-wiki/
+.
 ├── AGENTS.md   # the schema/rulebook every agent must read first (CLAUDE.md -> it)
 ├── README.md   # this file
+├── LICENSE     # MIT
+├── .gitignore  # Obsidian UI state + non-bundled game files
 ├── raw/        # immutable source of truth (notes + third-party config)
 │   ├── FINDINGS.md
 │   ├── SPLASHSCREEN-PATCHING.md
