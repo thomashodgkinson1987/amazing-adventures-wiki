@@ -1,7 +1,5 @@
-# Obsidian workspace/UI state (per-user, not content)
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
+# Obsidian
+.obsidian/
 
 # Editor / OS cruft
 .DS_Store
